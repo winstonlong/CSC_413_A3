@@ -1,7 +1,6 @@
-# CSC_413_A3
-csc413 Assignment3 RhythmFit
-# CSC_413_A3 — RhythmFit
 
+# CSC_413_A3 — RhythmFit
+# Weiqi Long & Haozheng Chen
 This repository contains the code and model files for **RhythmFit**, an interactive motion-to-music system built with Teachable Machine, Python, OpenCV and Arduino Mega2560.
 
 ## Project Overview
