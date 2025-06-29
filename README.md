@@ -4,7 +4,7 @@ csc413 Assignment3 RhythmFit
 
 This repository contains the code and model files for **RhythmFit**, an interactive motion-to-music system built with Teachable Machine, Python, OpenCV and Arduino Mega2560.
 
-1,## Project Overview
+## Project Overview
 
 **RhythmFit** lets users perform one of seven predefined poses in front of a webcam. A Keras model (exported from Google’s Teachable Machine) classifies each pose in real time; the Python script sends a corresponding class number (1–7) over USB serial to an Arduino Mega2560. The Mega drives a 4×4 membrane keypad and a passive buzzer:
 
@@ -18,18 +18,6 @@ This repository contains the code and model files for **RhythmFit**, an interact
   - Supports octave switching (keys A/B), 30 s “record” mode (key C), and playback (key D)  
   - Provides immediate audio feedback through a passive buzzer and visual feedback via built-in LED
  
-
-2,## Repository Structure
-
-CSC_413_A3/
-├── keras/
-│ ├── keras_model.h5 # Trained Teachable Machine model
-│ └── labels.txt # Class labels (“class1”…“class7”)
-├── RhythmFit.ino # Arduino sketch for keypad & buzzer control
-├── TeachableMachineaArduino.py
-│ # Python script: captures webcam, runs model, sends serial codes
-└── README.md # Project overview and instructions
-
 
 ## Prerequisites
 
