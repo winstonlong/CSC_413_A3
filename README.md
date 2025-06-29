@@ -6,7 +6,7 @@ This repository contains the code and model files for **RhythmFit**, an interact
 ## Project Overview
 
 **RhythmFit** lets users perform one of seven predefined poses in front of a webcam. A Keras model (exported from Google’s Teachable Machine) classifies each pose in real time; the Python script sends a corresponding class number (1–7) over USB serial to an Arduino Mega2560. The Mega drives a 4×4 membrane keypad and a passive buzzer:
-
+**This project must be run on 3.10 version of python and 2.10.1 version of Tensorflow, otherwise it will crash when start running.**
 - **Webcam + Python**  
   - Captures a 224×224 center crop from a live video feed  
   - Runs inference with a Teachable Machine model (`keras_model.h5`)  
